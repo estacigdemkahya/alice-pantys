@@ -1,0 +1,19 @@
+:root {
+    /* Ana Renkler */
+    --primary-color: #D72638; /* Canlı Kırmızı - Çekici ve enerjik */
+    --secondary-color: #FF8C94; /* Modern Mercan Pembesi - Dikkat çekici ama yumuşak */
+    --accent-color: #6A0572; /* Derin Mor - Premium ve sofistike bir his */
+  
+    /* Nötr Renkler */
+    --background-color: #FFF5F7; /* Hafif Pembe Beyaz - Ferah ve kadınsı */
+    --text-color: #2C1D27; /* Koyu Morumsu Kahverengi - Okunaklı ve zarif */
+    --light-text-color: #593C4F; /* Orta Ton Kahve-Mor - İnce detaylar için */
+  
+    /* Özel Vurgu Renkleri */
+    --gold-accent: #E4A11B; /* Daha sıcak Altın - Premium ve lüks bir dokunuş */
+    --hot-pink: #FF5C8A; /* Canlı Pembe - Kadınsı ve modern vurgular */
+    --deep-berry: #881337; /* Bordo-Kiraz Karışımı - Premium ve çekici */
+    --bright-lavender: #A17BFE; /* Parlak Lavanta - Soft ama modern dokunuşlar için */
+    --peach-tone: #FFB07C; /* Sıcak Şeftali - Tatlı ama sofistike bir his */
+  }
+  

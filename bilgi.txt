@@ -1,0 +1,75 @@
+        Responsive Theme and font
+
+PC:
+--primary-color	Butonlar, ana başlıklar, CTA'lar
+--secondary-color	Arka plan geçişleri, kartlar, hover efektleri
+--accent-color	Küçük butonlar, vurgular, özel ikonlar
+--background-color	Genel arka plan, temiz ve ferah bir his için
+--text-color	Başlık ve ana metinler
+--light-text-color	Alt başlıklar, açıklamalar, detay metinler
+--gold-accent	VIP üyelikler, premium his yaratmak için
+--soft-rose	Hover efektleri, ince detaylar, fiyat etiketleri
+--deep-plum	Footer, premium ürün bölümleri, zarif vurgular
+--delicate-lavender	Soft ama dikkat çekici hover ve gölge efektleri
+
+
+✨ Ana Font: "Playfair Display" (Lüks ve zarif bir serif fontu, premium his verir.)
+✨ Yardımcı Font: "Lora" (Daha klasik ama yumuşak serif, okuma kolaylığı için.)
+✨ Metin Fontu: "Source Sans Pro" (Modern ve temiz sans-serif, rahat okunur.)
+
+🔹 Kullanım Önerisi:
+✅ Başlıklar: Playfair Display (H1, H2, CTA'lar, öne çıkan metinler)
+✅ Alt Başlıklar ve Vurgular: Lora (Ürün açıklamaları, premium his vermek için)
+✅ Paragraf Metni: Source Sans Pro (Ana içerik, okunabilirliği artırmak için)
+
+
+
+
+
+
+
+TABLET:
+--primary-color	Butonlar, başlıklar, önemli CTA'lar
+--secondary-color	Arka plan geçişleri, sekmeler, yumuşak efektler
+--accent-color	Küçük butonlar, hover efektleri, vurgular
+--background-color	Genel arka plan, temiz ve ferah bir his için
+--text-color	Başlık ve ana metinler
+--light-text-color	Alt başlıklar, açıklamalar, detay metinler
+--gold-accent	Öne çıkan ürünlerde, VIP veya premium hissi için
+--soft-rose	Fiyat etiketleri, ince çerçeveler, yumuşak efektler
+--deep-plum	Footer ve koyu temalı bölümler, lüks bir dokunuş için
+--delicate-lavender	Hafif vurgular, hover efektleri, ekstra feminen detaylar
+
+✨ Ana Font: "Poppins" (Modern, dengeli ve okunaklı sans-serif.)
+✨ Yardımcı Font: "Merriweather" (Serif ama çok sıkışık değil, yumuşak bir hava verir.)
+✨ Metin Fontu: "Nunito" (Daha yuvarlak hatlara sahip, samimi ve feminen.)
+
+🔹 Kullanım Önerisi:
+✅ Başlıklar: Poppins (Net, modern ve minimalist duruş)
+✅ Alt Başlıklar: Merriweather (Hafif klasik hava katmak için)
+✅ Paragraf Metni: Nunito (Akıcı ve okunaklı, kullanıcı dostu)
+
+
+
+
+Mobil:
+--primary-color	Büyük butonlar, CTA'lar, öne çıkan başlıklar
+--secondary-color	Arka plan geçişleri, hover efektleri, kart tasarımları
+--accent-color	Küçük butonlar, vurgular, ikonlar
+--background-color	Genel arka plan, temiz ve ferah bir his için
+--text-color	Ana başlıklar ve metinler
+--light-text-color	Açıklamalar, detay metinler, ikon açıklamaları
+--gold-accent	Premium etiketler, VIP özellikler, özel detaylar
+--hot-pink	Hover efektleri, fiyat etiketleri, CTA arka planı
+--deep-berry	Footer ve özel indirim vurguları için
+--bright-lavender	Gölge efektleri, hover detayları, ürün arka planları
+--peach-tone	İnce buton vurguları, kart tasarımlarında kontrast olarak
+
+✨ Ana Font: "Montserrat" (Düzgün ve iddialı bir sans-serif, mobilde net görünür.)
+✨ Yardımcı Font: "Raleway" (Hafif zarif ve ince, hover efektlerinde iyi durur.)
+✨ Metin Fontu: "Quicksand" (Yumuşak, yuvarlak hatlı, mobil için çok okunaklı.)
+
+🔹 Kullanım Önerisi:
+✅ Başlıklar: Montserrat (Düz ve modern, büyük ekranlarda net görünür)
+✅ Alt Başlıklar: Raleway (İnce ve zarif, şık detaylar için)
+✅ Paragraf Metni: Quicksand (Daha akıcı ve rahat okunabilir, feminen)

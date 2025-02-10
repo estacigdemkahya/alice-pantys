@@ -1,0 +1,18 @@
+:root {
+    /* Ana Renkler */
+    --primary-color: #A0605F; /* Canlı Pudra Kırmızı - Güçlü ve feminen */
+    --secondary-color: #E3B5A4; /* Daha Zengin Pudra Pembesi - Yumuşak ama dikkat çekici */
+    --accent-color: #7A3E3E; /* Derin Kırmızı-Kahve - Kontrast ve sofistike dokunuşlar */
+  
+    /* Nötr Renkler */
+    --background-color: #FDF6F2; /* Hafif Krem - Ferah ve zarif */
+    --text-color: #3E2A2B; /* Derin Kahverengi - Okunabilirlik ve şıklık için */
+    --light-text-color: #5E4A4A; /* Yumuşak Kahve Tonu - İnce detaylar için */
+  
+    /* Özel Vurgu Renkleri */
+    --gold-accent: #D4A373; /* Altın Parıltısı - Premium hissiyat için */
+    --soft-rose: #E58989; /* Canlı Gül Kurusu - Kadınsı ve dikkat çekici */
+    --deep-plum: #883D61; /* Koyu Erik Moru - Lüks ve sofistike görünüm */
+    --delicate-lavender: #D7A9E3; /* Daha Canlı Lavanta - Feminen ve modern */
+  }
+  
