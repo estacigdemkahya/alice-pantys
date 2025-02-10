@@ -1,22 +1,45 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# Node.js & npm
+node_modules/
+package-lock.json
+
+# VS Code
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-file
-*.flf
-#Test results file
-TestResults.xml
+
+# Çevresel Değişkenler (API Anahtarları vb.)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Derleme Çıktıları
+dist/
+build/
+out/
+
+# Ön Bellek ve Log Dosyaları
+.cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# İşletim Sistemi Dosyaları
+.DS_Store
+Thumbs.db
+
+# Git Ignore Test Dosyaları
+!.gitignore
+
+# IDE/Editor Dosyaları
+.idea/
+*.iml
+
+# Webpack / Babel / TypeScript
+.parcel-cache/
+.next/
+.nuxt/
+.svelte-kit/
+
+# Trendyol API Anahtarlarını Gizlemek İçin
+trendyol-config.json
