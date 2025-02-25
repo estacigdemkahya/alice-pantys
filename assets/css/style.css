@@ -1,18 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap');
+
 :root {
+  --main-font: 'Playfair Display', serif; /*Ana Font*/
+  --secondary-font: ; /* Yardımcı Font */
+
+}
+
+:root {
+  --main-color: #2e3a59;
+  --hover-color: #ff6f61;
+  --white-color: #f8f4f0;
+
+
+
+  }
+
+  
+ 
+* {
+  margin: 0 auto;
+  padding: 0;
+  background: #F1E3D3;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: var(--white-color);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar Stil */
+.navbar {
+  background-color: var(--main-color);
+  padding: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-links li {
+  margin: 0 20px;
+}
+
+.navbar-links a {
+  font-size: 16px;
+  color: var(--main-color);
+  padding: 5px 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background-color: var(--hover-color);
+  color: #fff;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+/* 768px ve daha küçük ekranlar için stil */
+@media (max-width: 768px) {
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar-links {
+    flex-direction: column;
+    width: 100%;
+}
+
+.navbar-links li {
+    margin: 10px 0;
+    text-align: center;
+    background: var(--main-color);
+}
+
+.navbar-links a{
+  background: var(--main-color);
+  color: var(--white-color);
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 480px ve daha küçük ekranlar için stil */
+@media (max-width: 480px) {
+
+  :root {
     /* Ana Renkler */
-    --primary-color: #A0605F; /* Canlı Pudra Kırmızı - Güçlü ve feminen */
-    --secondary-color: #E3B5A4; /* Daha Zengin Pudra Pembesi - Yumuşak ama dikkat çekici */
-    --accent-color: #7A3E3E; /* Derin Kırmızı-Kahve - Kontrast ve sofistike dokunuşlar */
+    --primary-color: #D72638; /* Canlı Kırmızı - Çekici ve enerjik */
+    --secondary-color: #FF8C94; /* Modern Mercan Pembesi - Dikkat çekici ama yumuşak */
+    --accent-color: #6A0572; /* Derin Mor - Premium ve sofistike bir his */
   
     /* Nötr Renkler */
-    --background-color: #FDF6F2; /* Hafif Krem - Ferah ve zarif */
-    --text-color: #3E2A2B; /* Derin Kahverengi - Okunabilirlik ve şıklık için */
-    --light-text-color: #5E4A4A; /* Yumuşak Kahve Tonu - İnce detaylar için */
+    --background-color: #FFF5F7; /* Hafif Pembe Beyaz - Ferah ve kadınsı */
+    --text-color: #2C1D27; /* Koyu Morumsu Kahverengi - Okunaklı ve zarif */
+    --light-text-color: #593C4F; /* Orta Ton Kahve-Mor - İnce detaylar için */
   
     /* Özel Vurgu Renkleri */
-    --gold-accent: #D4A373; /* Altın Parıltısı - Premium hissiyat için */
-    --soft-rose: #E58989; /* Canlı Gül Kurusu - Kadınsı ve dikkat çekici */
-    --deep-plum: #883D61; /* Koyu Erik Moru - Lüks ve sofistike görünüm */
-    --delicate-lavender: #D7A9E3; /* Daha Canlı Lavanta - Feminen ve modern */
+    --gold-accent: #E4A11B; /* Daha sıcak Altın - Premium ve lüks bir dokunuş */
+    --hot-pink: #FF5C8A; /* Canlı Pembe - Kadınsı ve modern vurgular */
+    --deep-berry: #881337; /* Bordo-Kiraz Karışımı - Premium ve çekici */
+    --bright-lavender: #A17BFE; /* Parlak Lavanta - Soft ama modern dokunuşlar için */
+    --peach-tone: #FFB07C; /* Sıcak Şeftali - Tatlı ama sofistike bir his */
   }
   
+
+
+
+
+
+
+
+
+  
+
+
+}
