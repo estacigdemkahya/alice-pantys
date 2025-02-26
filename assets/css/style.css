@@ -3,20 +3,11 @@
 :root {
   --main-font: 'Playfair Display', serif; /*Ana Font*/
   --secondary-font: ; /* Yardımcı Font */
-
-}
-
-:root {
   --main-color: #2e3a59;
   --hover-color: #ff6f61;
   --white-color: #f8f4f0;
+}
 
-
-
-  }
-
-  
- 
 * {
   margin: 0 auto;
   padding: 0;
@@ -28,6 +19,7 @@ body {
   font-family: 'Playfair Display', serif;
   background-color: var(--white-color);
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -76,87 +68,98 @@ a {
   border-radius: 4px;
 }
 
+/* Slider Alanı */
 
-
-
-
-
-/* 768px ve daha küçük ekranlar için stil */
-@media (max-width: 768px) {
-
-  .navbar-container {
-    flex-direction: column;
-    align-items: flex-start;
+.slider-container {
+  width: 300px;
+  height: 300px;
+  margin: 5px auto;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  border: 5px solid var(--main-color);
+ 
 }
 
-.navbar-links {
-    flex-direction: column;
-    width: 100%;
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
-.navbar-links li {
-    margin: 10px 0;
-    text-align: center;
-    background: var(--main-color);
+.slide {
+  min-width: 100%;
 }
 
-.navbar-links a{
-  background: var(--main-color);
-  color: var(--white-color);
+.slide img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
-
-
-
-
-
-
-
-
+.quote-container {
+  width: 70%;
+  margin: 40px auto;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  background-color: var(--main-color) !important; /* arka plan rengi */
+  color: var(--white-color); /* metin rengi */
+  border-radius: 10px;
+  opacity: 0; /* Başlangıçta görünmez */
+  transition: opacity 1s ease-in-out;
 }
 
+.quote-container.active {
+  opacity: 1; /* aktif olduğunda görünür */
+}
 
+/* Diğer CSS kısmı aynen kaldı */
 
+.fade.active {
+  opacity: 1;
+}
 
-
-
-
-
-
-
-
-/* 480px ve daha küçük ekranlar için stil */
-@media (max-width: 480px) {
-
-  :root {
-    /* Ana Renkler */
-    --primary-color: #D72638; /* Canlı Kırmızı - Çekici ve enerjik */
-    --secondary-color: #FF8C94; /* Modern Mercan Pembesi - Dikkat çekici ama yumuşak */
-    --accent-color: #6A0572; /* Derin Mor - Premium ve sofistike bir his */
-  
-    /* Nötr Renkler */
-    --background-color: #FFF5F7; /* Hafif Pembe Beyaz - Ferah ve kadınsı */
-    --text-color: #2C1D27; /* Koyu Morumsu Kahverengi - Okunaklı ve zarif */
-    --light-text-color: #593C4F; /* Orta Ton Kahve-Mor - İnce detaylar için */
-  
-    /* Özel Vurgu Renkleri */
-    --gold-accent: #E4A11B; /* Daha sıcak Altın - Premium ve lüks bir dokunuş */
-    --hot-pink: #FF5C8A; /* Canlı Pembe - Kadınsı ve modern vurgular */
-    --deep-berry: #881337; /* Bordo-Kiraz Karışımı - Premium ve çekici */
-    --bright-lavender: #A17BFE; /* Parlak Lavanta - Soft ama modern dokunuşlar için */
-    --peach-tone: #FFB07C; /* Sıcak Şeftali - Tatlı ama sofistike bir his */
+/* Mobil Cihazlar için Responsive Tasarım */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
 
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+  }
 
+  .navbar-links li {
+    margin: 10px 0;
+    text-align: center;
+    background: var(--main-color);
+  }
 
+  .navbar-links a {
+    background: var(--main-color);
+    color: var(--white-color);
+    border-radius: 10px;
+  }
+}
 
-
-
-
-
-  
-
-
+@media (max-width: 480px) {
+  :root {
+    --primary-color: #D72638;
+    --secondary-color: #FF8C94;
+    --accent-color: #6A0572;
+    --background-color: #FFF5F7;
+    --text-color: #2C1D27;
+    --light-text-color: #593C4F;
+    --gold-accent: #E4A11B;
+    --hot-pink: #FF5C8A;
+    --deep-berry: #881337;
+    --bright-lavender: #A17BFE;
+    --peach-tone: #FFB07C;
+  }
 }
