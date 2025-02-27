@@ -13,13 +13,46 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Ürün Slider
-let index = 0;
-function slideProducts() {
-    const slider = document.getElementById("productSlider");
-    index = (index + 1) % 5;
-    slider.style.transform = `translateX(${-index * 100}%)`;
-}
-setInterval(slideProducts, 3000);
+document.addEventListener("DOMContentLoaded", function () {
+    const sliderWrapper = document.querySelector(".slider-wrapper");
+    const nextBtn = document.querySelector(".next");
+    const prevBtn = document.querySelector(".prev");
+
+    let index = 0;
+    const totalSlides = 5; // Toplam 5 resim olacak
+    const slidesToShow = 5; // Aynı anda 5 resim gösterilecek
+
+    function updateSlider() {
+        const translateX = -(index * (100 / slidesToShow)); // Kaydırma oranı
+        sliderWrapper.style.transform = `translateX(${translateX}%)`;
+    }
+
+    nextBtn.addEventListener("click", function () {
+        if (index < totalSlides - 1) {
+            index++;
+        } else {
+            index = 0; // Başlangıca dön
+        }
+        updateSlider();
+    });
+
+    prevBtn.addEventListener("click", function () {
+        if (index > 0) {
+            index--;
+        } else {
+            index = totalSlides - 1; // En sona git
+        }
+        updateSlider();
+    });
+
+    // Otomatik kaydırma
+    setInterval(() => {
+        nextBtn.click();
+    }, 3000); // 3 saniyede bir kaydır
+});
+
+
+
 
 // Moda Sözleri
 document.addEventListener("DOMContentLoaded", function () {

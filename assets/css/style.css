@@ -71,35 +71,50 @@ a {
 /* Slider Alanı */
 
 .slider-container {
-  width: 300px;
-  height: 300px;
-  margin: 5px auto;
-  padding: 10px;
+  width: 100%;
+  margin: 50px auto;
+  max-width: 800px;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
-  border: 5px solid var(--main-color);
- 
+  border: 3px solid var(--main-color);
 }
 
-.slider {
+.slider-wrapper {
   display: flex;
+  width: 200%; /* 10 resmin genişliği */
   transition: transform 0.5s ease-in-out;
 }
 
-.slide {
-  min-width: 100%;
+.slider-wrapper img {
+  width: 10%; /* Her resim, tüm sliderın %10'u kadar olacak */
+  flex-shrink: 0;
 }
 
-.slide img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
 }
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
 
 .quote-container {
-  width: 70%;
-  margin: 40px auto;
+  width: 80%;
+  margin: auto;
   font-size: 22px;
   font-weight: bold;
   color: #333;
@@ -149,17 +164,6 @@ a {
 }
 
 @media (max-width: 480px) {
-  :root {
-    --primary-color: #D72638;
-    --secondary-color: #FF8C94;
-    --accent-color: #6A0572;
-    --background-color: #FFF5F7;
-    --text-color: #2C1D27;
-    --light-text-color: #593C4F;
-    --gold-accent: #E4A11B;
-    --hot-pink: #FF5C8A;
-    --deep-berry: #881337;
-    --bright-lavender: #A17BFE;
-    --peach-tone: #FFB07C;
-  }
+
+
 }
