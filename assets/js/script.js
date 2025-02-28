@@ -86,3 +86,21 @@ document.addEventListener("DOMContentLoaded", function () {
     changeQuote(); // İlk söz hemen başlasın
 });
 
+
+
+// Hakkımızda
+document.addEventListener("DOMContentLoaded", function() {
+    const aboutSection = document.querySelector(".about-content");
+    aboutSection.style.opacity = 0;
+    aboutSection.style.transform = "translateY(30px)";
+    
+    window.addEventListener("scroll", function() {
+        const sectionPos = aboutSection.getBoundingClientRect().top;
+        const screenPos = window.innerHeight / 1.3;
+        if (sectionPos < screenPos) {
+            aboutSection.style.transition = "opacity 0.8s ease-out, transform 0.8s ease-out";
+            aboutSection.style.opacity = 1;
+            aboutSection.style.transform = "translateY(0)";
+        }
+    });
+});

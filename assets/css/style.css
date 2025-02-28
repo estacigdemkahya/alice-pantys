@@ -27,6 +27,14 @@ a {
 
 /* Navbar Stil */
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-bottom: 100px;
+  width: 100%;
+  z-index: 1000; /* Diğer öğelerin navbar'ın altına inmesini sağlar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
   background-color: var(--main-color);
   padding: 20px 0;
   transition: all 0.3s ease;
@@ -72,7 +80,7 @@ a {
 
 .slider-container {
   width: 100%;
-  margin: 50px auto;
+  margin: 130px auto;
   max-width: 800px;
   overflow: hidden;
   position: relative;
@@ -138,8 +146,172 @@ button {
   opacity: 1;
 }
 
+
+
+/* Hakkımızda */
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.about-content {
+  max-width: 700px;
+  /* background: var(--main-color); */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+h2 {
+  font-size: 28px;
+  /* line-height: 1.6; */
+  color: var(--hover-color);
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--main-color);
+  font-family: var(--main-font);
+
+}
+
+p i, p b {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  color: var(--hover-color);
+}
+
+.signature {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: var(--hover-color);
+}
+
+/* Hakkımızda Dekorasyon */
+.about-decor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  
+}
+
+.bubbles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  animation: moveBubble 6s ease-in-out infinite; /* Animasyon eklendi */
+}
+
+.bubbles img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  animation: floatBubble 9s ease-in-out infinite; /* Baloncuk hareketi */
+}
+
+/* Sol Bubbles */
+.bubbles.left {
+  flex: 1;
+  align-items: flex-start;
+}
+
+.bubbles.right {
+  flex: 1;
+  align-items: flex-end;
+  position: relative;
+  /* overflow: hidden; Fazla taşan öğeleri gizler */
+  background: transparent;
+
+}
+
+/* .bubbles.left .bubble-1 {
+  position: absolute; 
+  left: 50px; 
+  top: -120px;
+}
+
+.bubbles.left .bubble-3 {
+  position: absolute; left: 10px; bottom: -120px;
+}
+
+.bubbles.right .bubble-4{
+  position: absolute; right: 50px; top: -120px;
+}
+
+.bubbles.right .bubble-6{
+  position: absolute; right: 50px; bottom: -150px;  
+} */
+
+
+.bubbles img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+/* Baloncukların hareket animasyonu */
+@keyframes moveBubble {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Yukarıya hareket */
+  }
+}
+
+/* Baloncukların dalgalanma animasyonu */
+@keyframes floatBubble {
+  0%, 100% {
+    transform: scale(1); /* Başlangıç ve bitişte normal boyutta */
+  }
+  50% {
+    transform: scale(1.2); /* Yarı yolda büyür */
+  }
+}
+
+
+/* Text alanı */
+.about-text {
+  flex: 2;
+  padding: 0 30px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: var(--main-color);
+}
+
+
+
+
+
 /* Mobil Cihazlar için Responsive Tasarım */
 @media (max-width: 768px) {
+  
+  body {
+    padding-top: 120px; /* Mobilde navbar daha yüksek olursa buna uygun padding */
+  }
+  
+
   .navbar-container {
     flex-direction: column;
     align-items: flex-start;
@@ -161,9 +333,95 @@ button {
     color: var(--white-color);
     border-radius: 10px;
   }
+
+  .slider-container {
+    margin-top: 150px; /* Slider için daha küçük margin */
+  }
+
+  
+
+
+
+  /* About-decor'un düzeni */
+  .about-decor {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Bu, bubbles'ın alt alta sıralanmasını sağlar */
+  }
+
+  .bubbles {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    /* Flex yönünü değiştirdik: Bubbles artık yatay sıralanacak */
+  }
+
+  .bubbles img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .bubbles.left, .bubbles.right {
+    flex: 1 1 33%; /* Bu, her baloncuğun 3'e bölünmesini sağlar */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+
+
+  /* Her baloncuk için eşit genişlik ve hizalama */
+  .bubbles img {
+    width: 90px; /* Görsel boyutlarını biraz büyütebiliriz */
+    height: 90px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 480px) {
 
+  .bubbles img {
+    width: 70px; /* Küçük ekranlarda daha küçük baloncuklar */
+    height: 70px;
+  }
 
 }
