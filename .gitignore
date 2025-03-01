@@ -43,3 +43,6 @@ Thumbs.db
 
 # Trendyol API Anahtarlarını Gizlemek İçin
 trendyol-config.json
+
+.env
+/img/
