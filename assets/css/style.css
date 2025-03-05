@@ -99,7 +99,9 @@ a {
   flex-shrink: 0;
 }
 
-button {
+/* Slider butonları için stil */
+.slider-container .prev,
+.slider-container .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -110,7 +112,6 @@ button {
   cursor: pointer;
   font-size: 20px;
 }
-
 .prev {
   left: 10px;
 }
@@ -241,7 +242,7 @@ p i, p b {
 
 }
 
-/* .bubbles.left .bubble-1 {
+.bubbles.left .bubble-1 {
   position: absolute; 
   left: 50px; 
   top: -120px;
@@ -257,7 +258,7 @@ p i, p b {
 
 .bubbles.right .bubble-6{
   position: absolute; right: 50px; bottom: -150px;  
-} */
+}
 
 
 .bubbles img:hover {
@@ -304,6 +305,73 @@ p i, p b {
 
 
 
+/* Ürünler Bölümü */
+.products {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #2e3a59;
+  margin-bottom: 30px;
+}
+
+/* Ürünler Konteyneri */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Ürün Kartı */
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 15px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Ürün Görseli */
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Buton */
+.more-btn {
+  display: inline-block;
+  background: #ff6f61;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.more-btn:hover {
+  background: #e55b50;
+}
+
+
+
+
+
+
 /* Mobil Cihazlar için Responsive Tasarım */
 @media (max-width: 768px) {
   
@@ -343,19 +411,36 @@ p i, p b {
 
 
   /* About-decor'un düzeni */
-  .about-decor {
-    flex-direction: column;
+  .about-decor { 
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+   
     /* Bu, bubbles'ın alt alta sıralanmasını sağlar */
   }
 
   .bubbles {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 15px;
+    z-index: 0;
     /* Flex yönünü değiştirdik: Bubbles artık yatay sıralanacak */
   }
+
+ 
+  .bubble-6{
+    z-index: -1;
+    position: absolute;
+    left: 15px;
+  }
+
+  .bubble-4{
+    position: absolute;
+    left: 5px;
+  }
+  
 
   .bubbles img {
     width: 90px;
@@ -382,7 +467,13 @@ p i, p b {
 
 
 
-
+  .product-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+}
+.product-image {
+    height: 200px;
+}
 
 
 
